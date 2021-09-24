@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="ICON.png" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css?family=Bebas+Neue:regular" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,200,300,regular,500,600,700,100italic,200italic,300italic,italic,500italic,600italic,700italic" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,900,900italic" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+        <title>DHOKLA</title>
+    </head>
+    <body>
+       <!--WelcomeScreen-->
+       <h2 class="screenName" style="left: 15%;">welcome screen</h2>
+        <div class="screen" style="left: 15%;">
+            <header style="text-align: center;">
+                <h1>dhokla</h1>
+                <div id="description">
+                    <p id="des1">____________</p>
+                    <p id="des2">_________</p>
+                </div>
+            </header>
+            <main>
+                <button  class="button">Sign In with GOOGLE</button>
+            </main>
+            <footer>
+                <div id="head">
+                    <div id="eye">
+                        <div id="iris"></div>
+                    </div>
+                    <div id="eye" style="left: 158px; position: relative;">
+                        <div id="iris"></div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!--HomeScreen-->
+        <h2 class="screenName" style="left: 50%;">home screen</h2>
+        <div class="screen" style="left: 50%;">
+            <hr id="hamburger" style="top: 42px;">
+            <hr id="hamburger" style="top: 37px;">
+            <hr id="hamburger" style="top: 32px;">
+            <h1 id="bell">🔔</h1>
+            <div id="circle">
+                <h1 id="emoji">😎</h1>
+            </div>
+            <div id="tasks" style="top: 350px;">
+                <p id="tasksText">Design UI</p>
+            </div>
+            <div id="tasks" style="top: 400px;">
+                <p id="tasksText">Solve Exercise 24.4</p>
+            </div>
+            <div id="tasks" style="top: 450px;">
+                <p id="tasksText">Send an email to principal</p>
+            </div>
+            <div id="addTask">
+                <p id="tasksText">ADD TASK +</p>
+            </div>
+        </div>
+        <!--SideBarMenu-->
+        <h2 class="screenName" style="left: 85%;">side bar menu</h2>
+        <div class="screen" style="left: 85%; background-color: #1697a6;">
+            <div class="sideBarMenu">
+                <div class="profilePhotoContainer">
+                    <img src="panda.jpg" alt="kungFuPanda">
+                    <p id="name">Dragon Warrior</p>
+                </div>
+                <div class="hover">
+                    <p id="sideBarMenuText" style="top: 245px;">🏠 home</p>
+                    <p id="sideBarMenuText" style="top: 275px;">🎁 completed tasks</p>
+                    <p id="sideBarMenuText" style="top: 305px;">⚙️ setting</p>
+                    <p id="sideBarMenuText" style="top: 335px;">🔔 notification</p>
+                    <p id="logout">💣 logout</p>
+                </div>
+            </div>
+        </div>
+        <hr id="breakline">
+        <!--Setting Screen-->
+        <h2 class="screenName" style="left: 15%; top: 780px;">c-tasks screen</h2>
+        <div class="screen" style="left: 15%; top: 1180px;">
+            <h1 id="titleCT">completed tasks</h1>
+            <div id="completedTask" style="top: 120px;">
+                <p id="CTText">exercise</p>
+            </div>
+            <div id="completedTask" style="top: 170px;">
+                <p id="CTText">take a nap</p>
+            </div>
+            <div id="completedTask" style="top: 220px;">
+                <p id="CTText">meditate</p>
+            </div>
+            <div id="completedTask" style="top: 270px;">
+                <p id="CTText">do the laundry</p>
+            </div>
+            <div id="clearTasks">
+                <p id="clearTasksText">clear tasks</p>
+            </div>
+        </div>
+        <!--Notification Screen-->
+        <h2 class="screenName" style="left: 50%; top: 780px;">notification screen</h2>
+        <div class="screen" style="left: 50%; top: 1180px;">
+            <h1 id="titleNotification">notifications</h1>
+            <div id="notification" style="top: 120px;">
+                <p id="notificationsText">walk for 30-minl</p>
+            </div>
+            <div id="notification" style="top: 170px;">
+                <p id="notificationsText">add tasks to dhokla</p>
+            </div>
+            <div id="notification" style="top: 220px;">
+                <p id="notificationsText">give a feedback to dhoka</p>
+            </div>
+            <div id="clearNotifications" style="cursor: pointer;">
+                <p id="notificationsText" style="color: #ffba08;">clear notifications</p>
+            </div>
+        </div>
+        <!--Setting Screen-->
+        <h2 class="screenName" style="left: 85%; top: 780px;">setting screen</h2>
+        <div class="screen" style="left: 85%; top: 1180px;">
+            <div id="themeTextContainer">
+                <p id="themeText">theme</p>
+            </div>
+            <label for="light">
+                <input type="radio" name="default-dark-light" checked style="cursor: pointer;">
+                DEFAULT
+            </label>
+            <label for="dark">
+                <input type="radio" name="default-dark-light" style="cursor: pointer;">
+                DARK
+            </label>
+            <label for="default">
+                <input type="radio" name="default-dark-light"  style="cursor: pointer;">
+                LIGHT
+            </label>
+            <p id="questionMark">?</p>
+            <p id="goodBye">Cannot think of any more settings 😀</p>
+        </div>
+    </body>
+</html>
+
+<style>
+    html {
+        cursor: default;
+        background-color: #8da9c4;
+    }
+    .screen {
+        top: 50%;
+        width: 313.70px;
+        height: 642.52px;
+        position: absolute;
+        border-radius: 50px;
+        background: #f1f1f1;
+        border: 10px solid #333533;
+        transform: translate(-50%, -50%);
+    }
+    .screen::after {
+        top: 0%;
+        left: 50%;
+        content: '';
+        height: 23px;
+        width: 150px;
+        position: absolute;
+        background: #242423;
+        transform: translateX(-50%);
+        border-bottom-left-radius: 14px;
+        border-bottom-right-radius: 14px;
+    }
+    h1 {
+        top: 90px;
+        position: relative;
+        text-transform: uppercase;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    #description {
+        font-weight: bolder;
+        font-family: 'Lato', sans-serif;
+    }
+    #des1 {
+        top: 60px;
+        position: relative;
+    }
+    #des2 {
+        top: 35px;
+        position: relative;
+    }
+    .button {
+        top: 156px;
+        left: 55px;
+        height: 40px;
+        width: 200px;
+        transition: 1s;
+        cursor: pointer;
+        font-weight: bold;
+        position: relative;
+        color: #f6f4d2;
+        border-radius: 7px;
+        border: 1px solid #d90429;
+        background-color: #d90429;
+        font-family: 'Roboto Mono', monospace;
+    }
+    .button:hover {
+        transition: 1s;
+        background-color: #ef233c;
+    }
+    #head {
+        top: 518px;
+        left: 157px;
+        width: 316px;
+        height: 250px;
+        position: absolute;
+        background-color: #ffba08;
+        border-radius: 105px 105px 0 0;
+        border-bottom-left-radius: 40px;
+        transform: translate(-50%, -50%);
+        border-bottom-right-radius: 40px;
+    }
+    #eye {
+        top: 50px;
+        left: 50px;
+        width: 50px;
+        height: 50px;
+        position: relative;
+        border-radius: 50%;
+        display: inline-block;
+        background-color: #fff;
+    }
+    #iris {
+        top: 10px;
+        left: 10px;
+        width: 30px;
+        height: 30px;
+        position: relative;
+        border-radius: 50%;
+        background-color: #000;
+        transition: 1s;
+    }
+    #iris:hover {
+        opacity: 0;
+        transition: 1s;
+    }
+    #hamburger {
+        left: -130px;
+        width: 27px;
+        height: 4px;
+        position: relative;
+        cursor: pointer;
+        border-radius: 5px;
+        background-color: #242423;
+    }
+    #bell {
+        top: -12px;
+        left: 260px;
+        font-size: 25px;
+        position: relative;
+    }
+    #circle {
+        left: 50%;
+        top: 115px;
+        width: 180px;
+        height: 180px;
+        position: absolute;
+        border-radius: 50%;
+        transform: translate(-50%);
+        border: 7px inset #8da9c4;
+        background-color: #dee2e6;
+    }
+    #emoji {
+        top: 35%;
+        left: 50%;
+        position: absolute;
+        font-size: 40px;
+        transform: translate(-50%, -50%);
+    }
+    #tasks {
+        left: 50%;
+        width: 90%;
+        height: 40px;
+        color: #fff;
+        font-size: 15px;
+        transition: 0.5s;
+        cursor: pointer;
+        position: absolute;
+        font-weight: bold;
+        text-align: center;
+        border-radius: 10px;
+        transform: translate(-50%);
+        background-color: #d90429;
+        font-family: 'Roboto Mono', monospace;
+    }
+    #tasks:hover {
+        transition: 0.5s;
+        background-color: #ef233c;
+    }
+    #addTask {
+        width: 90%;
+        top: 500px;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 10px;
+        height: 40px;
+        left: 50%;
+        position: absolute;
+        font-weight: bold;
+        transform: translate(-50%);
+        color: #fff;
+        background-color: #0077b6;
+        font-size: 15px;
+        transition: 0.5s;
+        font-family: 'Roboto Mono', monospace;
+    }
+    #addTask:hover {
+        transition: 0.5s;
+        background-color: #0096c7;
+    }
+    #tasksText {
+        top: -5px;
+        left: 50%;
+        position: relative;
+        transform: translate(-50%);
+    }
+    .sideBarMenu {
+        width: 60%;
+        height: 642.52px;
+        top: 0px;
+        left: 0px;
+        position: relative;
+        border-radius: 40px 0px 0px 40px;
+        background-color: #fff;
+    }
+    .profilePhotoContainer {
+        width: 100%;
+        height: 250px;
+        top: 0px;
+        left: 0px;
+        border-top-left-radius: 40px;
+        background-color: #a2d2ff;
+    }
+    img {
+        top: 50%;
+        left: 50%;
+        position: relative;
+        transform: translate(-50%, -50%);
+        width: 120px;
+        border-radius: 15px;
+        cursor: pointer;
+        height: 150px;
+    }
+    #name {
+        top: 40px;
+        position: relative;
+        font-family: 'Roboto Mono', monospace;
+        font-weight: bold;
+        font-size: 14px;
+        text-align: center;
+    }
+    #sideBarMenuText {
+        left: 5px;
+        position: absolute;
+        text-transform: uppercase;
+        color:  #001219;
+        font-weight: 600;
+        font-size: 14px;
+        cursor: pointer;
+        transition: 0.5s;
+        font-family: 'Montserrat', sans-serif;
+    }
+    #sideBarMenuText:hover {
+        transition: 0.5s;
+        background-color: #ced4da;
+    }
+    #logout {
+        top: 340px;
+        left: 10px;
+        position: relative;
+        font-family: 'Montserrat', sans-serif;
+        color: #ff0000;
+        font-weight: bold;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    .screenName {
+        top: -10px;
+        transform: translate(-50%);
+        position: absolute;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-family: 'Roboto Mono', monospace;
+    }
+    #breakline {
+        top: 750px;
+        background-color: #242423;
+        height: 3px;
+        width: 100%;
+        position: relative;
+    }
+    #completedTask {
+        width: 90%;
+        border-radius: 10px;
+        height: 40px;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%);
+        background-color: #00a676;
+    }
+    #titleCT {
+        top: 30px;
+        position: relative;
+        text-align: center;
+        text-transform: uppercase;
+        color: #040403;
+        font-family: 'Source Code Pro', sans-serif;
+    }
+    #CTText {
+        top: -5px;
+        color: #fff;
+        text-align: center;
+        font-family: 'Roboto Mono', monospace;
+        position: relative;
+        font-size: 15px;
+        text-transform: uppercase;
+    }
+    #clearTasks {
+        width: 90%;
+        top: 320px;
+        cursor: pointer;
+        border-radius: 10px;
+        height: 40px;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%);
+        background-color: transparent;
+        border: 3.8px solid #00a676;
+    }
+    #clearTasksText {
+        color: #00a676;
+        top: -5px;
+        text-align: center;
+        font-weight: bold;
+        font-family: 'Roboto Mono', monospace;
+        position: relative;
+        font-size: 15px;
+        text-transform: uppercase;
+    }
+    #titleNotification {
+        top: 30px;
+        position: relative;
+        text-align: center;
+        text-transform: uppercase;
+        color: #040403;
+        font-family: 'Source Code Pro', sans-serif;
+    }
+    #notification {
+        width: 90%;
+        border-radius: 10px;
+        height: 40px;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%);
+        background-color: #ffba08;
+    }
+    #clearNotifications {
+        width: 90%;
+        top: 270px;
+        border-radius: 10px;
+        height: 40px;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%);
+        background-color: transparent;
+        border: 3.8px solid #ffba08;
+    }
+    #notificationsText {
+        color: #fff;
+        top: -5px;
+        text-align: center;
+        font-weight: bold;
+        font-family: 'Roboto Mono', monospace;
+        position: relative;
+        font-size: 15px;
+        text-transform: uppercase;
+    }
+    #themeTextContainer {
+        width: 100%;
+        top: 55px;
+        position: relative;
+        height: 30px;
+        background-color: #242423;
+    }
+    #themeText {
+        color: #fff;
+        top: 5px;
+        left: 10px;
+        position: relative;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 15px;
+        font-family: 'Roboto Mono', monospace;
+    }
+    label {
+        top: 60px;
+        left: 20px;
+        position: relative;
+        font-family: 'Roboto Mono', monospace;
+    }
+    #questionMark {
+        top: 10px;
+        font-size: 210px;
+        font-family: 'Roboto Mono', monospace;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%);
+    }
+    #goodBye {
+        top: 425px;
+        position: relative;
+        text-align: center;
+        font-size: 20px;
+        font-family: 'Roboto Mono', monospace;
+    }
+</style>
